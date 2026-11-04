@@ -1,2 +1,10 @@
 .DS_Store
 Datasets/*.zip
+
+# Virtual environment and installer scripts
+*.sh
+Miniconda*
+
+# Jupyter / Checkpoints / Temporary backups
+.ipynb_checkpoints/
+*.bak
