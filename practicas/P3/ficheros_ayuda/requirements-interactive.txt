@@ -1,0 +1,4 @@
+-r requirements.txt
+ipywidgets>=8,<9
+Pillow>=10
+anywidget>=0.9,<1
