@@ -1,0 +1,222 @@
+{
+  "results": [
+    {
+      "Modelo": "Modelo 1 (CNN base)",
+      "Épocas": 30.0,
+      "Parámetros": 1143242.0,
+      "Train Acc (%)": 99.2,
+      "Val Acc (%)": 86.86,
+      "Test Acc (%)": 85.38,
+      "Brecha Train-Val (pp)": 12.34,
+      "Train Loss": 0.0241,
+      "Val Loss": 0.7043,
+      "Test Loss": 0.7855,
+      "Tiempo (s)": 88.7
+    },
+    {
+      "Modelo": "Modelo 2 (Arquitectura elegida)",
+      "Épocas": 40.0,
+      "Parámetros": 304810.0,
+      "Train Acc (%)": 98.48,
+      "Val Acc (%)": 94.86,
+      "Test Acc (%)": 95.16,
+      "Brecha Train-Val (pp)": 3.62,
+      "Train Loss": 0.0456,
+      "Val Loss": 0.1784,
+      "Test Loss": 0.1695,
+      "Tiempo (s)": 162.8
+    },
+    {
+      "Modelo": "Modelo 3 (Data Augmentation)",
+      "Épocas": 40.0,
+      "Parámetros": 304810.0,
+      "Train Acc (%)": 89.24,
+      "Val Acc (%)": 88.22,
+      "Test Acc (%)": 88.1,
+      "Brecha Train-Val (pp)": 1.02,
+      "Train Loss": 0.3216,
+      "Val Loss": 0.3528,
+      "Test Loss": 0.3499,
+      "Tiempo (s)": 294.3
+    },
+    {
+      "Modelo": "Modelo 4 (Dropout)",
+      "Épocas": 40.0,
+      "Parámetros": 304810.0,
+      "Train Acc (%)": 97.31,
+      "Val Acc (%)": 94.0,
+      "Test Acc (%)": 94.62,
+      "Brecha Train-Val (pp)": 3.31,
+      "Train Loss": 0.0773,
+      "Val Loss": 0.1978,
+      "Test Loss": 0.1665,
+      "Tiempo (s)": 167.3
+    },
+    {
+      "Modelo": "Modelo 5 (Batch Normalization)",
+      "Épocas": 40.0,
+      "Parámetros": 306154.0,
+      "Train Acc (%)": 97.37,
+      "Val Acc (%)": 95.19,
+      "Test Acc (%)": 94.84,
+      "Brecha Train-Val (pp)": 2.18,
+      "Train Loss": 0.0724,
+      "Val Loss": 0.1617,
+      "Test Loss": 0.1546,
+      "Tiempo (s)": 183.1
+    },
+    {
+      "Modelo": "Modelo 6 (L2 = 1e-4)",
+      "Épocas": 40.0,
+      "Parámetros": 304810.0,
+      "Train Acc (%)": 95.31,
+      "Val Acc (%)": 93.56,
+      "Test Acc (%)": 93.78,
+      "Brecha Train-Val (pp)": 1.75,
+      "Train Loss": 0.2072,
+      "Val Loss": 0.2655,
+      "Test Loss": 0.2591,
+      "Tiempo (s)": 164.7
+    },
+    {
+      "Modelo": "Modelo 7 (Final: Aug+BN+Dropout+L2, Adam)",
+      "Épocas": 58.0,
+      "Parámetros": 306154.0,
+      "Train Acc (%)": 93.19,
+      "Val Acc (%)": 93.14,
+      "Test Acc (%)": 92.57,
+      "Brecha Train-Val (pp)": 0.05,
+      "Train Loss": 0.2674,
+      "Val Loss": 0.2749,
+      "Test Loss": 0.2876,
+      "Tiempo (s)": 663.6
+    },
+    {
+      "Modelo": "Modelo 8 (Final: Aug+BN+Dropout+L2, SGD Nesterov)",
+      "Épocas": 59.0,
+      "Parámetros": 306154.0,
+      "Train Acc (%)": 92.94,
+      "Val Acc (%)": 92.37,
+      "Test Acc (%)": 92.84,
+      "Brecha Train-Val (pp)": 0.57,
+      "Train Loss": 0.2686,
+      "Val Loss": 0.2726,
+      "Test Loss": 0.274,
+      "Tiempo (s)": 584.6
+    },
+    {
+      "Modelo": "Modelo 9 (Aug+BN+Dropout 0.3, coseno 100 ép.)",
+      "Épocas": 100.0,
+      "Parámetros": 306154.0,
+      "Train Acc (%)": 97.02,
+      "Val Acc (%)": 95.7,
+      "Test Acc (%)": 96.15,
+      "Brecha Train-Val (pp)": 1.32,
+      "Train Loss": 0.0884,
+      "Val Loss": 0.1207,
+      "Test Loss": 0.119,
+      "Tiempo (s)": 1144.3
+    },
+    {
+      "Modelo": "Modelo 10 (Aug+Dropout, sin BN, coseno 100 ép.)",
+      "Épocas": 100.0,
+      "Parámetros": 304810.0,
+      "Train Acc (%)": 93.47,
+      "Val Acc (%)": 92.1,
+      "Test Acc (%)": 92.52,
+      "Brecha Train-Val (pp)": 1.37,
+      "Train Loss": 0.2399,
+      "Val Loss": 0.2864,
+      "Test Loss": 0.2836,
+      "Tiempo (s)": 802.9
+    }
+  ],
+  "arch_search": [
+    {
+      "Arquitectura": "A: 2 bloques, 32f, k3",
+      "Parámetros": 2117962.0,
+      "Mejor época": 7.0,
+      "Train Acc (%) en esa época": 86.14,
+      "Val Acc (%)": 82.42,
+      "Val Loss": 0.4973,
+      "Tiempo (s)": 35.2
+    },
+    {
+      "Arquitectura": "B: 3 bloques, 32f, k3 (base)",
+      "Parámetros": 1143242.0,
+      "Mejor época": 15.0,
+      "Train Acc (%) en esa época": 95.17,
+      "Val Acc (%)": 87.88,
+      "Val Loss": 0.3854,
+      "Tiempo (s)": 51.2
+    },
+    {
+      "Arquitectura": "C: 4 bloques, 32f, k3",
+      "Parámetros": 914122.0,
+      "Mejor época": 12.0,
+      "Train Acc (%) en esa época": 92.28,
+      "Val Acc (%)": 90.22,
+      "Val Loss": 0.2943,
+      "Tiempo (s)": 52.4
+    },
+    {
+      "Arquitectura": "D: 3 bloques, 32f, k5",
+      "Parámetros": 1308618.0,
+      "Mejor época": 7.0,
+      "Train Acc (%) en esa época": 85.42,
+      "Val Acc (%)": 81.78,
+      "Val Loss": 0.5122,
+      "Tiempo (s)": 42.1
+    },
+    {
+      "Arquitectura": "E: 3 bloques, 64f, k3",
+      "Parámetros": 2469386.0,
+      "Mejor época": 12.0,
+      "Train Acc (%) en esa época": 94.68,
+      "Val Acc (%)": 87.16,
+      "Val Loss": 0.4027,
+      "Tiempo (s)": 80.2
+    },
+    {
+      "Arquitectura": "F: 3 bloques x2 conv, 32f, k3",
+      "Parámetros": 1337002.0,
+      "Mejor época": 10.0,
+      "Train Acc (%) en esa época": 94.37,
+      "Val Acc (%)": 88.81,
+      "Val Loss": 0.363,
+      "Tiempo (s)": 68.4
+    },
+    {
+      "Arquitectura": "G: 4 bloques x2 conv, 32f, k3",
+      "Parámetros": 1697962.0,
+      "Mejor época": 12.0,
+      "Train Acc (%) en esa época": 94.99,
+      "Val Acc (%)": 88.17,
+      "Val Loss": 0.3823,
+      "Tiempo (s)": 83.4
+    },
+    {
+      "Arquitectura": "H: 3 bloques x2 conv, GAP",
+      "Parámetros": 304810.0,
+      "Mejor época": 19.0,
+      "Train Acc (%) en esa época": 92.98,
+      "Val Acc (%)": 91.7,
+      "Val Loss": 0.225,
+      "Tiempo (s)": 85.0
+    }
+  ],
+  "best_model": "Modelo 9 (Aug+BN+Dropout 0.3, coseno 100 ép.)",
+  "best_arch": "H: 3 bloques x2 conv, GAP",
+  "per_class_f1": {
+    "AnnualCrop": 0.9473684210526315,
+    "Forest": 0.9642857142857143,
+    "HerbaceousVegetation": 0.9588173178458289,
+    "Highway": 0.9683377308707124,
+    "Industrial": 0.9769335142469471,
+    "Pasture": 0.9591836734693877,
+    "PermanentCrop": 0.9360100376411543,
+    "Residential": 0.9730893433799784,
+    "River": 0.9594405594405594,
+    "SeaLake": 0.9703872437357631
+  }
+}
