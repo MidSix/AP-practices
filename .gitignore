@@ -8,3 +8,13 @@ Miniconda*
 # Jupyter / Checkpoints / Temporary backups
 .ipynb_checkpoints/
 *.bak
+
+# Plan y explicaciones de trabajo (no se entregan)
+docs/
+
+# Bytecode de Python (se regenera solo)
+__pycache__/
+*.pyc
+
+# Zips entregados (copia comprimida de practicas/)
+entregas/

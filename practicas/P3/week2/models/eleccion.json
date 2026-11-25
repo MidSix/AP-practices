@@ -1,0 +1,28 @@
+{
+  "modelo_elegido": "Residual d=24 (con saltos)",
+  "latent_dim": 24,
+  "encoder": "models/encoder_elegido.keras",
+  "decoder": "models/decoder_elegido.keras",
+  "criterio": "menor Kaggle Score en validacion; a menos de un 3 % se prefiere el latente menor",
+  "scores_validacion": {
+    "Residual d=24 (con saltos)": 0.02392838556828772,
+    "Residual d=24 (sin saltos)": 0.03440100175154842,
+    "Plano Semana 1 d=32": 0.029408949537839322,
+    "Plano Semana 1 d=128": 0.02707176890582529
+  },
+  "capas_perceptuales_disponibles": [
+    "enc_conv1",
+    "enc_res1_conv_a",
+    "enc_res1_conv_b",
+    "enc_res1_out",
+    "enc_conv2",
+    "enc_res2_conv_a",
+    "enc_res2_conv_b",
+    "enc_res2_out",
+    "enc_conv3",
+    "enc_res3_conv_a",
+    "enc_res3_conv_b",
+    "enc_res3_out",
+    "enc_conv4"
+  ]
+}
